@@ -17,4 +17,26 @@ def add_task(title , description):
 
 
 
+def desplay_tasks():
+    for task in tasks:
+        task.sho_info()
+
+
+def search_forTask(title):
+    for task in tasks:
+        if task.title == title:
+            task.sho_info()
+        else:
+            print("no resolt")
+
+def delet_task(title):
+    for task in tasks:
+        if task.title == title:
+            tasks.remove(task)
+        else:
+            print('task not found')
+
+
+
+
 

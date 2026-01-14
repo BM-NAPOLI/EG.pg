@@ -10,4 +10,7 @@ class Task:
         self.isDone = isDone
     
 
-    
+    def sho_info(self):
+        print(f"title : {self.title}")
+        print(f"description : {self.description}")
+        print(f"status : {self.isDone}")
